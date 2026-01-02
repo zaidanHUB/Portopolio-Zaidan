@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio Desain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>PORTOFOLIO DESAIN</h1>
+    <p>Karya Visual & Eksplorasi Kreatif</p>
+</header>
+
+<!-- NAVIGATION BUTTONS -->
+<nav class="menu">
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+    <h2>Tentang Saya</h2>
+    <p>
+        Halo! Saya adalah seorang designer grafis dan web enthusiast 
+        yang tertarik pada visual branding, UI/UX, dan creative digital media. 
+        Portofolio ini berisi kumpulan karya desain serta hasil coding yang saya kerjakan.
+    </p>
+</section>
+
+
+<!-- PROJECT SECTION -->
+<section id="projects" class="project-section">
+
+    <h2>Projects</h2>
+
+    <!-- SWITCH BUTTON -->
+    <div class="switch">
+        <button onclick="showDesign()">Hasil Desain</button>
+        <button onclick="showCoding()">Hasil Coding</button>
+    </div>
+
+
+    <!-- DESIGN GALLERY -->
+    <div id="designGallery" class="portfolio">
+
+        <div class="card">
+            <img src="images/design wr2(doceo).jpg">
+            <div class="info">
+                <h3>Project 01</h3>
+                <span>Poster / Branding</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/desigbinar(doceo).jpg">
+            <div class="info">
+                <h3>Project 02</h3>
+                <span>UI Design</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/design 3(doceo).jpg">
+            <div class="info">
+                <h3>Project 03</h3>
+                <span>Illustration</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/idul.jpg">
+            <div class="info">
+                <h3>Project 04</h3>
+                <span>Creative Visual</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CODING PROJECT -->
+    <div id="codingGallery" class="portfolio" style="display:none">
+
+        <div class="card">
+            <img src="images/coding1.jpg">
+            <div class="info">
+                <h3>Website Project</h3>
+                <span>Front-End Development</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/coding2.jpg">
+            <div class="info">
+                <h3>UI Prototype</h3>
+                <span>Web Application</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <p>Silakan hubungi saya melalui:</p>
+
+    <ul>
+        <li>Email: your@email.com</li>
+        <li>Instagram: @usernamekamu</li>
+        <li>WhatsApp: 08xxxxxxxxxx</li>
+    </ul>
+</section>
+
+
+<footer>
+    © 2025 Portofolio Desain
+</footer>
+
+
+<script>
+function showDesign(){
+    document.getElementById("designGallery").style.display = "grid";
+    document.getElementById("codingGallery").style.display = "none";
+}
+
+function showCoding(){
+    document.getElementById("designGallery").style.display = "none";
+    document.getElementById("codingGallery").style.display = "grid";
+}
+</script>
+
+</body>
+</html>
